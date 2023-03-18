@@ -10,7 +10,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link key={1}  rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
-        
       </Head>
     <Component {...pageProps} />
   </div>;
