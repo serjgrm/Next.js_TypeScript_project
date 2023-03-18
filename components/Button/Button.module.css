@@ -1,0 +1,26 @@
+.button {
+    display: inline-block;
+
+    box-sizing: border-box;
+    padding: 10px;
+
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+
+}
+
+.primary {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.ghost {
+    color: var(--black);
+    background: none;
+    border: 1px solid var(--gray--light);
+}
