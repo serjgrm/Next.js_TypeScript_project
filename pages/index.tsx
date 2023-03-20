@@ -1,7 +1,11 @@
 import React from "react";
-import { Button, Htag, P, Tag } from '../components';
+import { Button, Htag, P, Tag, Rating } from '../components';
 
 export default function Home():JSX.Element {
+
+
+
+  
   return (
     <div>
       <Htag tag='h1'> Hello </Htag>
@@ -18,9 +22,7 @@ export default function Home():JSX.Element {
       <Tag color='green'>sss</Tag>
       <Tag color='red'>sss</Tag>
       <Tag href="https://app.netlify.com/teams/serjgrm/overview?_ga=2.222979544.2145851855.1677164288-1673040163.1676992353" color='primary'>sss</Tag>
-
-
-
+      <Rating rating={4}></Rating>
 
     </div>
   );
