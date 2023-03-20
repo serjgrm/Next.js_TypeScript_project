@@ -9,18 +9,17 @@ import { FunctionComponent } from 'react';
 
 const Layout = ({children}:LayoutProps):JSX.Element =>{
     return (
-      <>
-      <Header/>
-      <div>
+      <div className={styles.wrapper}>
+        <Header className={styles.header}/>
 
-        <Sidebar/>
-        <div>
+        <Sidebar className={styles.sidebar}/>
+        
+        <div className={styles.body}>
             {children}
         </div>
 
+        <Footer className={styles.footer}/>
       </div>
-      <Footer/>
-      </>
     )
 }
 
