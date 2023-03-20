@@ -1,9 +1,10 @@
 .filled svg{
     fill: var(--primary);
-
 }
 .star{
     display: inline-block;
     margin-right: 5px;
-    cursor: pointer;
+}
+.editable {
+    cursor: pointer
 }
