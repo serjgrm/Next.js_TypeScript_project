@@ -13,12 +13,12 @@ const Layout = ({children}:LayoutProps):JSX.Element =>{
         <Header className={styles.header}/>
 
         <Sidebar className={styles.sidebar}/>
-        
+
         <div className={styles.body}>
             {children}
         </div>
 
-        <Footer className={styles.footer}/>
+        <Footer className={styles.footer}/> 
       </div>
     )
 }

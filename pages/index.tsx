@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import { Button, Htag, P, Tag, Rating } from '../components';
-import { withLayout } from "@/layout/Lauout";
+import { withLayout } from "@/layout/Layout";
 
 
 
