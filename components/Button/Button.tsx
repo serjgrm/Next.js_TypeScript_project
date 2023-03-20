@@ -13,14 +13,19 @@ export const Button = ({appearance, arrow = 'none', children, className, ...prop
             [styles.ghost]:appearance == 'ghost'
             })}
             {...props}>
-        {children}
-        {arrow !== 'none' && <span className={cn(styles.arrow,{
-            [styles.down]: arrow =='down',
-            [styles.right]: arrow =='right'
-        })}> 
 
-            <ArrowIcon/>
-        </span> }
+        {children}
+
+        {arrow !== 'none' && 
+        <span className={cn(styles.arrow,{
+            [styles.down]: arrow =='down',
+            [styles.right]: arrow =='right'})}> 
+            
+                <ArrowIcon/>
+
+        </span>}
+
+
     </button>
    )
 };

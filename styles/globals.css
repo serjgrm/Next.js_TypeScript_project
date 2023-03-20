@@ -13,13 +13,13 @@ a{
 *{
   box-sizing: border-box;
 }
-html{
-  --white: white;
-}
+
 
 :root {
   --black: #3B434E;
+  --gray-light: #EBEBEB;
   --primary: #7653FC;
+  --white: white;
   --primary-hover: #643ff7;
   --red: #DE0000;
   --green: #1DC47E;
