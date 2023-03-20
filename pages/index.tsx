@@ -1,13 +1,16 @@
 import React,{useState} from "react";
 import { Button, Htag, P, Tag, Rating } from '../components';
+import { withLayout } from "@/layout/Lauout";
 
-export default function Home():JSX.Element {
+
+
+function Home():JSX.Element {
 
 const [rating, setRating] = useState<number>(4);
 
   
   return (
-    <div>
+    <>
       <Htag tag='h1'> Hello </Htag>
 
       <Button appearance='primary' arrow="right" className="dddddd" >Кнопка</Button>
@@ -25,8 +28,9 @@ const [rating, setRating] = useState<number>(4);
       <Tag href="https://app.netlify.com/teams/serjgrm/overview?_ga=2.222979544.2145851855.1677164288-1673040163.1676992353" color='primary'>sss</Tag>
       <Rating rating={rating} isEditable setRating={setRating}></Rating>
 
-    </div>
+    </>
   );
 }
 
 
+export default withLayout(Home);

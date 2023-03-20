@@ -19,7 +19,6 @@ export const Rating = ({isEditable = false, rating, setRating, ...props }:Rating
                 onMouseLeave={()=>changeDisplay(rating)}
                 onClick={()=> onClick(i+1)}
                 >
-                    
                     <StarIcon
                      tabIndex={isEditable ? 0 : -1}
                      onKeyDown={(e:KeyboardEvent) => handleSpace(i + 1, e)}
@@ -54,6 +53,8 @@ export const Rating = ({isEditable = false, rating, setRating, ...props }:Rating
        </div>
     );
 }
+
+
 
 
 
