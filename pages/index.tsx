@@ -37,22 +37,25 @@ const [rating, setRating] = useState<number>(4);
   );
 }
 
-console.log(process.env.NEXT_PUBLIC_DOMAIN);
-
 export default withLayout(Home);
 
 export async function getStaticProps() {
+
   const firstCategory = 0;
+
   const { data: menu } = await axios.post<MenuItem[]>(process.env.NEXT_PUBLIC_DOMAIN + "/api/top-page/find", {
     firstCategory
   });
+
   return {
     props: {
       menu,
       firstCategory
     }
   };
+  
 }
+
 
 interface HomeProps extends Record<string,unknown> {
   menu: MenuItem[],
