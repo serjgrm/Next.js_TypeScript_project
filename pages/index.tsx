@@ -32,6 +32,7 @@ const [rating, setRating] = useState<number>(4);
   );
 }
 
+
 export default withLayout(Home);
 
 
