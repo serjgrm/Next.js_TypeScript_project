@@ -31,7 +31,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 		fallback: true
 	};
 };
-getStaticPaths();
 
 export const getStaticProps: GetStaticProps<CourseProps> = async ({ params }: GetStaticPropsContext<ParsedUrlQuery>) => {
 	if (!params) {
@@ -47,7 +46,6 @@ export const getStaticProps: GetStaticProps<CourseProps> = async ({ params }: Ge
 		category: page.category,
 		limit: 10
 	});
-
 	return {
 		props: {
 			menu,
@@ -64,3 +62,5 @@ interface CourseProps extends Record<string, unknown> {
 	page: TopPageModel;
 	products: ProductModel[];
 }
+
+
